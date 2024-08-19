@@ -22,6 +22,11 @@
                 extend: {
                     colors: {
                         clifford: '#da373d',
+                        first: 'rgb(255, 0, 0)',
+                        second: 'rgb(255, 137, 56)',
+                        star: 'rgb(255, 200, 80)',
+                        fstart: 'rgba(255, 0, 0, 0.1)',
+                        fend: 'rgba(255, 137, 56, 0.1)'
                     }
                 }
             }
@@ -30,8 +35,87 @@
 </head>
 
 <body>
-
-
+    <main class="w-9/12 mx-auto">
+        <header class="flex justify-between mb-16">
+            <div>
+                <h1 class="text-[rgb(28, 28, 28)] text-7xl font-extrabold">It's good <br>tea time at The <br>Tea House
+                </h1>
+                <p class="text-[rgb(119, 119, 119)] text-lg font-medium mt-7 w-3/4">Tea and Botanical Solutions Supplier
+                    Give Optimum Satisfaction To Your Taste Buds.</p>
+                <button
+                    class="bg-gradient-to-r from-first to-second rounded-lg text-white text-xl font-bold mt-7 p-4">Explore
+                    More <i class="fa fa-arrow-right -rotate-45" aria-hidden="true"></i></button>
+            </div>
+            <div class="relative">
+                <img class="w-full" src="./images/banner.png" alt="">
+                <button
+                    class="bg-white shadow-lg rounded-lg flex justify-center items-center gap-2 p-2 max-w-64 max-h-28 absolute -mt-24 ml-24">
+                    <div><i class="fa fa-star text-3xl text-star" aria-hidden="true"></i></div>
+                    <div class="text-left">
+                        <h1 class="text-[rgb(28, 28, 28)] text-3xl font-extrabold">5.00</h1>
+                        <p class="text-[rgb(119, 119, 119)] text-lg font-medium">Trust Pilot Ratings</p>
+                    </div>
+                </button>
+            </div>
+        </header>
+    </main>
+    <footer class="bg-gradient-to-r from-fstart to-fend">
+        <div class="w-9/12 mx-auto">
+            <div class="flex justify-between items-center mb-12 pt-16">
+                <div>
+                    <img src="./images/cup.png" alt="">
+                </div>
+                <div class="flex items-center gap-4">
+                    <p>Ready to get strated?</p>
+                    <button
+                        class="bg-gradient-to-r from-first to-second rounded-lg text-white text-xl font-bold p-2">Get
+                        Started</button>
+                </div>
+            </div>
+            <div class="grid grid-cols-4">
+                <div>
+                    <h1 class="text-[rgb(28, 28, 28)] text-xl font-semibold mb-2">Quick Links</h1>
+                    <ul class="space-y-2">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Insurance</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[rgb(28, 28, 28)] text-xl font-semibold mb-2">Our Service</h1>
+                    <ul class="space-y-2">
+                        <li><a href="">Life Insurance</a></li>
+                        <li><a href="">Car Insurance</a></li>
+                        <li><a href="">Health Insurance</a></li>
+                        <li><a href="">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[rgb(28, 28, 28)] text-xl font-semibold mb-2">Help</h1>
+                    <ul class="space-y-2">
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[rgb(28, 28, 28)] text-2xl font-semibold mb-2">Subscribe to our newsletter</h1>
+                    <input class="bg-transparent border-b-2 border-black w-2/3" placeholder="Email address" type="text"
+                        name="" id="">
+                    <i class="bg-gradient-to-r from-first to-second text-white rounded-full p-2 fa fa-chevron-right"
+                        aria-hidden="true"></i>
+                        <div class="space-x-2 space-y-8">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                        </div>
+                </div>
+            </div>
+            <div class="text-center pb-16 mt-12">
+                <p>© 2027 UIDesign.to - All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
